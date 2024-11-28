@@ -1,0 +1,332 @@
+/*
+Theme Name: Hello Elementor Child
+Theme URI: https://elementor.com/hello-theme/?utm_source=wp-themes&utm_campaign=theme-uri&utm_medium=wp-dash
+Template: hello-elementor
+Author: Elementor Team
+Author URI: https://elementor.com/?utm_source=wp-themes&utm_campaign=author-uri&utm_medium=wp-dash
+Description: Hello Elementor is a lightweight and minimalist WordPress theme that was built specifically to work seamlessly with the Elementor site builder plugin. The theme is free, open-source, and designed for users who want a flexible, easy-to-use, and customizable website. The theme, which is optimized for performance, provides a solid foundation for users to build their own unique designs using the Elementor drag-and-drop site builder. Its simplicity and flexibility make it a great choice for both beginners and experienced Web Creators.
+Tags: accessibility-ready,flexible-header,custom-colors,custom-menu,custom-logo,featured-images,rtl-language-support,threaded-comments,translation-ready
+Version: 3.1.1.1732254353
+Updated: 2024-11-22 05:45:53
+
+*/
+
+/* ST CSS */
+
+.st-social img {
+    margin: 0 !important;
+    width: 100%;
+}
+.wp_header_tel {
+    margin-left: 15px;
+    color: #fff;
+    font-size: 22px;
+}
+.wp_BannerBtn a div::after {
+    position: absolute;
+    content: "";
+    width: 10px;
+    height: 16px;
+    background-image: url(/energetic/wp-content/uploads/2024/11/arr__right.png.webp);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    right: -20px;
+    top: calc(50% - 7px);
+}
+.wpHomeBanner a div {
+    font-family: "Kanit" !important;
+    letter-spacing: 0;
+    position: relative;
+}
+.wp_BannerBtn a {
+    padding: 10px 35px 10px 25px !important;
+}
+.wpFeaturePart h3 {
+    min-height: 36px;
+}
+.wpFeaturePart img {
+    width: 65px;
+    height: 65px;
+    object-fit: contain;
+}
+.wp_my_contactForm * {
+    font-family: "kanit" !important;
+}
+.wp_my_contactForm form label {
+    font-size: 18px !important;
+    font-weight: 400 !important;
+    line-height: 20px !important;
+    color: #fff !important;
+}
+.wp_my_contactForm span.wpcf7-form-control-wrap {
+    margin-top: 10px !important;
+    display: block;
+}
+.wp_my_contactForm input.wpcf7-form-control.wpcf7-text {
+    border-radius: 8px;
+    border: 1px solid #cccccc;
+    margin-bottom: 18px;
+}
+.wp_my_contactForm form {
+    display: flex;
+    gap: 18px;
+}
+.wp_my_contactForm form>div {
+    max-width: 48%;
+    width: 100%;
+}
+.wp_my_contactForm textarea {
+    height: 208px;
+    border-radius: 8px;
+    border: 1px solid #eee;
+}
+.wp_my_contactForm input.wpcf7-submit {
+    background: transparent;
+    border: 1px solid #fff;
+    width: 100%;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 0px #696969 !important;
+    margin-top: 35px;
+}
+.wp_my_contactForm input.wpcf7-submit:hover {
+    background: #ba84eb;
+}
+/* .st-blogs .psac-post-carousel-content {
+    border-radius: 8px !important;
+}
+.st-blogs .psac-post-img-wrap {
+    padding: 12px;
+}
+.st-blogs .psac-post-title {
+    font-size: 20px !important;
+    line-height: 1 !important;
+    text-align: left;
+    font-weight: 500;
+    font-family: 'Kanit';
+}
+.st-blogs .psac-post-short-content {
+    line-height: 1.2;
+    font-weight: 400;
+    font-size: 16px;
+    color: #858585;
+    font-family: 'Roboto';
+}   
+.st-blogs a.psac-readmorebtn {
+    background: none;
+    border: none;
+    padding-left: 0;
+    padding-right: 0;
+    color: #a762e5;
+    padding-top: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+}
+.st-blogs .psac-post-content {
+    text-align: left;
+}
+.st-blogs .psac-post-carousel.psac-design-2 .psac-post-carousel-slide:hover .psac-post-carousel-content {
+    border-color: #a762e5;
+}
+.st-blogs .psac-post-img-wrap .psac-post-image-bg {
+    border-radius: 7px !important;
+    height: 200px;
+    background-position: top;
+}
+.st-blogs .psac-slider-and-carousel .owl-nav .owl-next, .st-blogs .psac-slider-and-carousel .owl-nav .owl-prev {
+    border: 1px solid #a762e5;
+    color: #a762e5;
+}
+.st-blogs .psac-slider-and-carousel .owl-prev {
+    left: -70px !important;
+    border-radius: 50% !important;
+}
+.st-blogs .psac-slider-and-carousel .owl-next {
+    right: -70px !important;
+    border-radius: 50% !important;
+}
+.st-blogs .owl-nav .owl-next, .st-blogs .owl-nav .owl-prev {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} */
+
+.custm-blogs {
+    padding: 10px 0;
+    overflow-x: hidden;
+}
+.gallery-spacing-custom .gallery {
+    margin-left: -1px !important;
+    margin-right: -1px !important;
+    margin-bottom: -5px !important;
+}
+.customslide-img img {
+    max-width: 100%;
+    width: 100%;
+    border-radius: 7px;
+    height: 200px;
+    object-fit: cover;
+}
+.customblog-slider .slick-list .slick-slide {
+    border: 2px solid #ddd;
+    border-radius: 8px !important;
+    padding: 12px;
+}
+.customslide-title {
+    font-family: 'Kanit';
+    font-size: 20px !important;
+    line-height: 1 !important;
+    text-align: left;
+    font-weight: 500;
+    color: #000;
+    padding-top: 10px;
+}
+.customslide-title a {
+    color: #000;
+    text-decoration: none;
+}
+.customslide-text {
+    line-height: 1.2;
+    font-weight: 400;
+    font-size: 16px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #777777;
+    font-family: roboto;
+}
+.custmslide-btn {
+    font-family: 'Roboto';
+    background: 0 0;
+    border: none;
+    padding-left: 0;
+    padding-right: 0;
+    color: #a762e5;
+    padding-top: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    text-decoration: none !important;
+    margin: 15px 0px;
+    display: block;
+    font-size: 13px;
+}
+.custm-blogs .custom-navigation button {
+    width: 35px;
+    height: 35px;
+    border: none;
+    padding: 0;
+}
+.custm-blogs .custom-navigation button.prev {
+    position: absolute;
+    top: 50%;
+    transform: translateX(-50%) rotate(180deg);
+    left: -20px;
+}
+.custm-blogs .custom-navigation button.next {
+    position: absolute;
+    top: 50%;
+    transform: translateX(-50%);
+    left: unset;
+    right: -55px;
+}
+.custm-blogs .custom-navigation button {
+    background: none;
+}
+.custm-blogs .custom-navigation button:hover {
+    background: none;
+}
+.custm-blogs-section .slick-initialized .slick-slide {
+    margin: 0 10px 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.custm-blogs-section .slick-next, .custm-blogs-section .slick-prev {
+    z-index: 5;
+}
+.custm-blogs-section .slick-next {
+    right: 15px;
+}
+.custm-blogs-section .slick-prev {
+    left: 15px;
+}
+.custm-blogs-section .slick-next:before, .custm-blogs-section .slick-prev:before {
+    color: #000;
+    font-size: 26px;
+}
+/* About page */
+
+.wp_h_slider_direct {
+    background-image: url(/energetic/wp-content/uploads/2024/11/bg_slider.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0px 120px;
+    height: 192px;
+    position: relative;
+    z-index: 99;
+}
+.wp_h_slider_direct-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 40px;
+}
+.wp_h_slider_direct .d-flex-child {
+    display: grid;
+    column-gap: 20px;
+    grid-template-columns: auto auto;
+    align-items: center;
+}
+.wp_h_slider_direct-img img {
+    height: 60px;
+}
+.wp_h_slider_direct-content p {
+    font-size: 18px;
+    line-height: 24px;
+    color: #ffffff;
+    font-weight: 700;
+    font-style: italic;
+    font-family: "Kanit";
+    margin: 0px;
+}
+.wp_h_slider_direct .performance {
+    display: flex;
+    align-items: center;
+    column-gap: 30px;
+    bottom: -53px;
+    justify-content: flex-end;
+    margin-top: 3.3%;
+    margin-right: -30px;
+}
+.wp_h_slider_direct .performance a {
+    color: #7383ba;
+    font-weight: 500;
+    font-style: italic;
+    font-family: "Kanit";
+    font-size: 16px;
+    text-decoration: none;
+}
+.wp_h_slider_direct .dot {
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: #7383ba;
+}
+.wp_silder_botTxt .wp_h_slider_direct {
+    margin-top: -100px;
+}
+/* blog page */
+
+aside#st-sidebar>div {
+    display: block !important;
+}
