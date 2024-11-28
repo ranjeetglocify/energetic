@@ -35,10 +35,10 @@ if ($query->have_posts()) : ?>
 
                 <div class="custom-navigation">
                     <button class="prev">
-                        <img src="/energetic/wp-content/uploads/2024/11/arrow-right.png" alt="Previous Slide" />
+                        <img src="/wp-content/uploads/2024/11/arrow-right.png" alt="Previous Slide" />
                     </button>
                     <button class="next">
-                        <img src="/energetic/wp-content/uploads/2024/11/arrow-right.png" alt="Next Slide" />
+                        <img src="/wp-content/uploads/2024/11/arrow-right.png" alt="Next Slide" />
                     </button>
                 </div>
             </div>
@@ -53,40 +53,3 @@ if ($query->have_posts()) : ?>
 wp_reset_postdata();
 ?>
 
-<script type="text/javascript">
-    jQuery(document).ready(function() {
-        jQuery('.customblog-slider').slick({
-            slidesToShow: 3,
-            slidesToScroll: 1,
-            arrows: false,
-            dots: false,
-            speed: 300,
-            infinite: true,
-            autoplaySpeed: 5000,
-            autoplay: true,
-            responsive: [
-                {
-                    breakpoint: 991,
-                    settings: {
-                        slidesToShow: 2,
-                    }
-                },
-                {
-                    breakpoint: 767,
-                    settings: {
-                        slidesToShow: 1,
-                    }
-                }
-            ]
-        });
-
-        // Custom navigation buttons
-        jQuery('.custom-navigation .prev').on('click', function () {
-            jQuery('.customblog-slider').slick('slickPrev'); // Default prev functionality
-        });
-
-        jQuery('.custom-navigation .next').on('click', function () {
-            jQuery('.customblog-slider').slick('slickNext'); // Default next functionality
-        });
-    });
-</script>

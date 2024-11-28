@@ -2,7 +2,7 @@
     <div class="wp_h_slider_direct-flex">
         <div class="d-flex-child">
             <div class="wp_h_slider_direct-img">
-                <img class="m-m-l" alt="wp_h_slider_direct-child-1" src="/energetic/wp-content/uploads/2024/11/direct-child-1.png" />
+                <img class="m-m-l" alt="wp_h_slider_direct-child-1" src="/wp-content/uploads/2024/11/direct-child-1.png" />
             </div>
             <div class="wp_h_slider_direct-content">
                 <p>DIRECT FROM</p>
@@ -12,7 +12,7 @@
 
         <div class="d-flex-child">
             <div class="wp_h_slider_direct-img">
-                <img alt="wp_h_slider_direct-child-2" src="/energetic/wp-content/uploads/2024/11/direct-child-2.png" />
+                <img alt="wp_h_slider_direct-child-2" src="/wp-content/uploads/2024/11/direct-child-2.png" />
             </div>
             <div class="wp_h_slider_direct-content">
                 <p>AUSTRALIAN</p>
@@ -22,7 +22,7 @@
 
         <div class="d-flex-child">
             <div class="wp_h_slider_direct-img">
-                <img alt="wp_h_slider_direct-child-3" src="/energetic/wp-content/uploads/2024/11/direct-child-3.png" />
+                <img alt="wp_h_slider_direct-child-3" src="/wp-content/uploads/2024/11/direct-child-3.png" />
             </div>
             <div class="wp_h_slider_direct-content">
                 <p>FAST DELIVERY</p>

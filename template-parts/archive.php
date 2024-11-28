@@ -13,7 +13,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	<?php echo do_shortcode('[smartslider3 slider="5"]'); ?>
 </div>
 <div class="wp_silder_botTxt">
-<?php echo do_shortcode('[smart_slider_txt_bottom]'); ?> 
+	<?php echo do_shortcode('[smart_slider_txt_bottom]'); ?> 
 </div>
 <main id="content" class="site-main">
 
@@ -70,7 +70,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 		<?php } ?>
 	</div>
-	<aside id="st-sidebar">
+	<aside class="st-sidebar">
 		<?php dynamic_sidebar('smartslider_area_1'); ?>
 	</aside>
 	<?php
@@ -92,3 +92,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 	<?php endif; ?>
 
 </main>
+<div class="wpNewsletterSignup">
+	<div class="ctm-container">
+		<?php echo do_shortcode('[contact-form-7 id="24a1686" title="Newsletter Signup"]'); ?>
+	</div>
+</div>
