@@ -75,3 +75,12 @@ function wp_slider_txt_bottom_single_post() {
 }
 add_shortcode('smart_slider_txt_bottom', 'wp_slider_txt_bottom_single_post');
 
+add_shortcode( 'product_gallery', 'custom_product_gallery_shortcode' );
+
+function custom_product_gallery_shortcode( $atts ) {
+    ob_start(); 
+    include  get_stylesheet_directory() . '/modules/complete_the_look.php';
+    return ob_get_clean(); 
+}
+
+

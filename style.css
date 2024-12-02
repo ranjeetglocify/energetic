@@ -354,6 +354,50 @@ html, body {
 .wp_silder_botTxt .wp_h_slider_direct {
     margin-top: -100px;
 } 
+/* Horizontal Tabs Navigation */
+.tab-nav {
+    display: flex;
+    justify-content: flex-start;  /* Align tabs to the left */
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.tab-link {
+    padding: 10px 20px;
+    margin-right: 5px;
+    cursor: pointer;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-bottom: none;
+    transition: background-color 0.3s ease;
+}
+
+.tab-link.active {
+    background-color: #0073e6;
+    color: white;
+    border-color: #0073e6;
+    font-weight: bold;
+}
+
+.tab-link:hover {
+    background-color: #d9eaff;
+}
+
+/* Tab Content */
+.accordion-inner {
+    display: none;
+}
+.custom-tab {
+    display: none;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+}
+
+.custom-tab.active {
+    display: block;
+}
 
 /* blog page */
 .single .page-content a {
