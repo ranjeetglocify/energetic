@@ -24,9 +24,9 @@ get_header( 'shop' ); ?>
 	<?php
 		do_action( 'woocommerce_before_main_content' );
 	?>
-
-		<?php while ( have_posts() ) : ?>
-			<?php the_post(); ?>
+<?php while ( have_posts() ) : ?>
+	<?php the_post(); ?>
+    <div class="st-row-wrap">
     <div class="st-col-7">
     <div class="custom-product-heading">
         <?php the_field( 'heading' ); ?>
@@ -54,26 +54,42 @@ get_header( 'shop' ); ?>
                 <div class="custom-tab">
                     <div class="tab-content">
                         <div class="st-accordian">
+                        <?php if ( ! empty( $product_fields['about1'] ) ) : ?>
                             <div class="accordion-title">
                                 <a href="javascript:void(0)"><?php echo wp_kses_post( $product_fields['about1'] ); ?></a></div>
+                                <?php endif; ?>
+                                <?php if ( ! empty( $product_fields['about_content1'] ) ) : ?>
                             <div class="accordion-inner">
                                 <p class="st-content"><?php echo wp_kses_post( $product_fields['about_content1'] ); ?></p>
                             </div>
+                            <?php endif; ?>
+                            <?php if ( ! empty( $product_fields['features1'] ) ) : ?>
                             <div class="accordion-title">
                                 <a href="javascript:void(0)"><?php echo wp_kses_post( $product_fields['features1'] ); ?></a></div>
+                                <?php endif; ?>
+                                <?php if ( ! empty( $product_fields['features_content1'] ) ) : ?>
                             <div class="accordion-inner">
                                 <p class="st-content"><?php echo wp_kses_post( $product_fields['features_content1'] ); ?></p>
                             </div>
+                            <?php endif; ?>
+                            <?php if ( ! empty( $product_fields['delivery1'] ) ) : ?>
                             <div class="accordion-title">
                                 <a href="javascript:void(0)"><?php echo wp_kses_post( $product_fields['delivery1'] ); ?></a></div>
+                                <?php endif; ?>
+                                <?php if ( ! empty( $product_fields['delivery_content1'] ) ) : ?>
                             <div class="accordion-inner">
                                 <p class="st-content"><?php echo wp_kses_post( $product_fields['delivery_content1'] ); ?></p>
                             </div>
+                            <?php endif; ?>
+                            <?php if ( ! empty( $product_fields['sizing1'] ) ) : ?>
                             <div class="accordion-title">
                                 <a href="javascript:void(0)"><?php echo wp_kses_post( $product_fields['sizing1'] ); ?></a></div>
+                                <?php endif; ?>
+                            <?php if ( ! empty( $product_fields['sizing_content1'] ) ) : ?>
                             <div class="accordion-inner">
                                 <p class="st-content"><?php echo wp_kses_post( $product_fields['sizing_content1'] ); ?></p>
                             </div>
+                            <?php endif; ?>
                         </div>
                     </div>
                 </div>
@@ -83,26 +99,43 @@ get_header( 'shop' ); ?>
                 <div class="custom-tab">
                     <div class="tab-content">
                     <div class="st-accordian">
+                    <?php if ( ! empty( $product_fields['about2'] ) ) : ?>
                             <div class="accordion-title">
-                                <a href="javascript:void(0)"><?php echo wp_kses_post( $product_fields['about2'] ); ?></a></div>
+                                <a href="javascript:void(0)"><?php echo wp_kses_post( $product_fields['about2'] ); ?></a>
+                            </div>
+                            <?php endif; ?>
+                            <?php if ( ! empty( $product_fields['about_content2'] ) ) : ?>
                             <div class="accordion-inner">
                                 <p class="st-content"><?php echo wp_kses_post( $product_fields['about_content2'] ); ?></p>
                             </div>
+                            <?php endif; ?>
+                            <?php if ( ! empty( $product_fields['features2'] ) ) : ?>
                             <div class="accordion-title">
                                 <a href="javascript:void(0)"><?php echo wp_kses_post( $product_fields['features2'] ); ?></a></div>
+                                <?php endif; ?>
+                                <?php if ( ! empty( $product_fields['features_content2'] ) ) : ?>
                             <div class="accordion-inner">
                                 <p class="st-content"><?php echo wp_kses_post( $product_fields['features_content2'] ); ?></p>
                             </div>
+                            <?php endif; ?>
+                            <?php if ( ! empty( $product_fields['delivery2'] ) ) : ?>
                             <div class="accordion-title">
                                 <a href="javascript:void(0)"><?php echo wp_kses_post( $product_fields['delivery2'] ); ?></a></div>
+                                <?php endif; ?>
+                                <?php if ( ! empty( $product_fields['delivery_content2'] ) ) : ?>
                             <div class="accordion-inner">
                                 <p class="st-content"><?php echo wp_kses_post( $product_fields['delivery_content2'] ); ?></p>
                             </div>
+                            <?php endif; ?>
+                            <?php if ( ! empty( $product_fields['sizing2'] ) ) : ?>
                             <div class="accordion-title">
                                 <a href="javascript:void(0)"><?php echo wp_kses_post( $product_fields['sizing2'] ); ?></a></div>
+                                <?php endif; ?>
+                                <?php if ( ! empty( $product_fields['sizing_content2'] ) ) : ?>
                             <div class="accordion-inner">
                                 <p class="st-content"><?php echo wp_kses_post( $product_fields['sizing_content2'] ); ?></p>
                             </div>
+                            <?php endif; ?>
                         </div>
                     </div>
                 </div>
@@ -140,8 +173,18 @@ get_header( 'shop' ); ?>
     </div>
 
     <?php endif; ?>
+    <div class="st-info-wrapper">
+        <div class="st-order-modal">
+        <?php custom_product_modal_button(); ?>
+        </div>
+        <div class="st-contact-button">
+            <a href="/contact-us/">Contact us <span class="st-icons">&gt;</span></a>
+        </div>
+    </div>
 </div>
 <div class="st-col-5">
+    <div class="st-gallery-block">
+    <div class="st-gallery-parent-first st-gallery-parent">
     <div class="st-product-gallery">
         <div class="st-images-first-tab st-images">
             <?php
@@ -189,7 +232,9 @@ get_header( 'shop' ); ?>
             <button class="next">
                 <img src="/wp-content/uploads/2024/11/arrow-right.png" alt="Next Slide" />
             </button>
-        </div>
+    </div>
+    </div>
+    <div class="st-gallery-parent-second st-gallery-parent">
     <div class="st-images-second-tab st-images">
         <?php
             $gallery_group = get_field('second_tab_gallery');
@@ -231,7 +276,8 @@ get_header( 'shop' ); ?>
                 <img src="/wp-content/uploads/2024/11/arrow-right.png" alt="Next Slide" />
             </button>
         </div>
-    </div>
+        </div>
+    <div class="st-gallery-parent-third st-gallery-parent" >
     <div class="st-images-third-tab st-images">
         <?php
         $gallery_group = get_field('third_tab_gallery');
@@ -278,22 +324,26 @@ get_header( 'shop' ); ?>
                 <img src="/wp-content/uploads/2024/11/arrow-right.png" alt="Next Slide" />
             </button>
         </div>
+        
     </div>
-</div>
+    </div>
 
-<div class="parent-gallery-div">
-    <div class="st-product-gallery">
-        <?php echo do_shortcode('[product_gallery]'); ?>
-    </div>
-    <div class="product-gallery-icons">
-        <button class="prev">
-            <img src="/wp-content/uploads/2024/11/arrow-right.png" alt="Previous Slide" />
-        </button>
-        <button class="next">
-            <img src="/wp-content/uploads/2024/11/arrow-right.png" alt="Next Slide" />
-        </button>
+    <div class="parent-gallery-div">
+        <h3>Complete the look</h3>
+        <div class="st-product-gallery">
+            <?php echo do_shortcode('[product_gallery]'); ?>
+        </div>
+        <div class="product-gallery-icons">
+            <button class="prev">
+                <img src="/wp-content/uploads/2024/11/arrow-right.png" alt="Previous Slide" />
+            </button>
+            <button class="next">
+                <img src="/wp-content/uploads/2024/11/arrow-right.png" alt="Next Slide" />
+            </button>
+        </div>
     </div>
 </div>
+    </div>
 <?php endwhile; ?>
 
 <?php

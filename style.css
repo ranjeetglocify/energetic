@@ -372,16 +372,27 @@ html, body {
     border-bottom: none;
     transition: background-color 0.3s ease;
 }
-
-.tab-link.active {
-    background-color: #0073e6;
-    color: white;
-    border-color: #0073e6;
-    font-weight: bold;
-}
-
 .tab-link:hover {
     background-color: #d9eaff;
+}
+.st-gallery-block {
+    position: relative;
+}
+
+.st-gallery-parent {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease, visibility 0s linear 0.5s; 
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+  }
+.st-gallery-parent.active {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.5s ease;
+    position: relative;
 }
 
 /* Tab Content */
@@ -390,9 +401,6 @@ html, body {
 }
 .custom-tab {
     display: none;
-    padding: 20px;
-    border: 1px solid #ccc;
-    background-color: #fff;
 }
 
 .custom-tab.active {
@@ -784,9 +792,209 @@ span.wpcf7-spinner {
 .header-custom {
     overflow: hidden;
 }
+/*----single-product-page----*/
+.custom-product-heading .alt-font {
+    font-size: clamp(26px, 3.25vw, 48px);
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    color: #7114a7;
+    text-shadow: none;
+    font-style: inherit;
+    letter-spacing: 0;
+    text-transform: capitalize;
+    line-height: 50px;
+}
 
+.custom-product-heading span.small a {
+    text-transform: lowercase;
+    white-space: nowrap;
+    background: #f9cf18;
+    border-radius: 5px;
+    padding: 10px;
+    line-height: 1.2;
+    color: #7715a3;
+    -webkit-text-stroke: unset;
+    font-size: 20px;
+    font-weight: 400;
+}
 
+.custom-product-heading h3 {
+    font-size: 24px !important;
+    font-weight: 400;
+    font-style: unset;
+    color: #7214a9;
+}
+.custom-tabs-container ul>li {
+    border-top: 0;
+    color: #999 !important;
+    display: block;
+    font-weight: 600 !important;
+    padding: 10px 20px 10px 0;
+    margin-right: 15px;
+    text-transform: capitalize;
+    background: unset !important;
+    border: none;
+    font-size: 27px;
+    font-family: 'Roboto';
+}
+.custom-tabs-container li.tab-link.active {
+    border: 0;
+    color: #7114a7 !important;
+    background: url(https://www.energetic.com.au/wp-content/uploads/2022/11/bottom-icon.png.webp);
+    color: #7114a7 !important;
+    background-repeat: no-repeat !important;
+    background-position: right center !important;
+}
+.accordion-title {
+    background: #e7e7e7;
+    color: #7114a7;
+    font-size: 24px !important;
+    font-weight: 400;
+    padding: 5px 20px;
+}
 
+.st-accordian>div {
+    margin-bottom: 2px;
+    border-radius: 5px;
+    position: relative;
+    cursor: pointer;
+}
+.st-accordian .accordion-title:hover {
+    background: #461ca3;
+}
+.st-accordian>div:hover span , .st-accordian>div:hover a {
+    color: #fff;
+}
+.st-row-wrap {
+    display: grid;
+    grid-template-columns: 58% 38%;
+    justify-content: space-between;
+}
+.st-accordian .accordion-title span {
+    font-size: 52px;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    line-height: 1.1;
+}
+.st-accordian .accordion-title a {
+    color: #7715a2;
+}
+.parent-gallery-div h3 {
+    color: #7214a9;
+    text-align: center;
+    padding: 20px 0;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 27px;
+}
+.st-gallery-block .slick-slide img {
+    object-fit: cover !important;
+    height: 228px;
+}
+.first-tab-gallery-nav button {
+    display: none;
+}
+
+.first-tab-gallery-nav::before {
+    position: absolute;
+    content: "";
+    background-image: url(http://energetic.com/wp-content/uploads/2024/12/4829872_arrow_next_right_icon-1.svg);url(
+    .first-tab-gallery-nav button);
+    width: 30px;
+    height: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+    transform: rotate(180deg);
+}
+
+.first-tab-gallery-nav::after {
+    right: 0;
+    background-image: url(http://energetic.com/wp-content/uploads/2024/12/4829872_arrow_next_right_icon-1.svg);
+    position: absolute;
+    content: "";
+    left: unset;
+    top: 50%;
+    width: 30px;
+    height: 30px;
+}
+.custom-tabs-container {
+    padding-top: 30px;
+}
+.st-product-gallery .slick-list.draggable img {
+    object-fit: cover !important;
+    height: 228px;
+}
+.st-gallery-parent , .st-product-gallery  {
+    border: 1px solid #ededed;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgb(0 0 0 / .25);
+}
+.st-gallery-parent .slick-dots li button::before , .parent-gallery-div .slick-dots li button::before {
+    width: 11px;
+    height: 11px;
+    background: #fff;
+    margin: 1px 1px 1px 11px;
+    border-radius: 10px;
+    border: 1px solid #4e0e73;
+    font-size: 0;
+}
+.st-gallery-parent .slick-dots {
+    bottom: -30px;
+}
+.st-gallery-parent .slick-dots .slick-active button::before , 
+.parent-gallery-div .slick-dots .slick-active button::before {
+    width: 11px;
+    height: 11px;
+    margin: 0 0 0 10px;
+    background: #4e0e73;
+    opacity: 1;
+    box-shadow: none;
+}
+.st-gallery-parent .slick-dots li button:hover , 
+.st-gallery-parent .slick-dots li button:focus , 
+.parent-gallery-div .slick-dots li button:focus,
+.parent-gallery-div .slick-dots li button:hover {
+    background: none;
+}
+/* Modal Background */
+#product-modal {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* Modal Content */
+.st-modal-content {
+    background-color: #fff;
+    margin: 5% auto;
+    padding: 20px;
+    border-radius: 10px;
+    width: 50%;
+    text-align: center;
+}
+.st-modal-header {
+    position: relative;
+}
+/* Close Button */
+#st-close-modal {
+    color: #000;
+    font-size: 28px;
+    font-weight: bold;
+    position: absolute;
+    top: 0;
+    right: 20px;
+    cursor: pointer;
+}
+
+/*----single-product-page-end----*/
 
 @media (max-width: 1080px) {
     .wp_Newsletter_Signup {
